@@ -10,13 +10,12 @@ object Extensions {
 
     fun String.formatNumber(): String {
         var s = this
-        s = s.substring(0, s.length - 2)
         var result = s[s.length - 1].toString()
         for (i in 1 until s.length) {
             result = if (i % 3 == 0) {
                 "${s[s.length - i - 1]} $result"
             } else {
-                s[s.length - i - 1] + result
+                "${s[s.length - i - 1]}$result"
             }
         }
         return result

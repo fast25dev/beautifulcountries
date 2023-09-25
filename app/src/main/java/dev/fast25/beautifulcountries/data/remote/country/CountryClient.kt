@@ -15,18 +15,10 @@ object CountryClient {
         .build()
 
 
-    val apiService = retrofit.create(CountryService::class.java)
+    val apiService: CountryService = retrofit.create(CountryService::class.java)
 
 
-    private fun baseUrl(): String {
-
-        return if (isTester) {
-            SERVER_DEVELOPMENT
-        } else {
-            SERVER_PRODUCTION
-        }
-
-    }
+    private fun baseUrl() = if (isTester) SERVER_DEVELOPMENT else SERVER_PRODUCTION
 
 
 }

@@ -14,14 +14,50 @@ data class NameResponseItem(
     @field:SerializedName("independent")
     val independent: Boolean? = null,
 
+    @field:SerializedName("landlocked")
+    val landlocked: Boolean? = null,
+
+    @field:SerializedName("borders")
+    val borders: List<String?>? = null,
+
+    @field:SerializedName("postalCode")
+    val postalCode: PostalCode? = null,
+
     @field:SerializedName("flags")
     val flags: Flags? = null,
+
+    @field:SerializedName("capitalInfo")
+    val capitalInfo: CapitalInfo? = null,
+
+    @field:SerializedName("ccn3")
+    val ccn3: String? = null,
 
     @field:SerializedName("coatOfArms")
     val coatOfArms: CoatOfArms? = null,
 
+    @field:SerializedName("demonyms")
+    val demonyms: Demonyms? = null,
+
+    @field:SerializedName("fifa")
+    val fifa: String? = null,
+
+    @field:SerializedName("cioc")
+    val cioc: String? = null,
+
+    @field:SerializedName("car")
+    val car: Car? = null,
+
+    @field:SerializedName("translations")
+    val translations: Translations? = null,
+
+    @field:SerializedName("altSpellings")
+    val altSpellings: List<String?>? = null,
+
     @field:SerializedName("area")
-    val area: Int = 1,
+    val area: Any? = null,
+
+    @field:SerializedName("languages")
+    val languages: Languages? = null,
 
     @field:SerializedName("maps")
     val maps: Maps? = null,
@@ -33,25 +69,46 @@ data class NameResponseItem(
     val idd: Idd? = null,
 
     @field:SerializedName("tld")
-    val tld: ArrayList<String>? = null,
+    val tld: List<String?>? = null,
+
+    @field:SerializedName("unMember")
+    val unMember: Boolean? = null,
+
+    @field:SerializedName("gini")
+    val gini: Gini? = null,
 
     @field:SerializedName("continents")
-    val continents: ArrayList<String>? = null,
+    val continents: List<String?>? = null,
 
     @field:SerializedName("population")
-    val population: Int = 1,
+    val population: Int? = null,
+
+    @field:SerializedName("startOfWeek")
+    val startOfWeek: String? = null,
 
     @field:SerializedName("timezones")
-    val timezones: ArrayList<String>? = null,
+    val timezones: List<String?>? = null,
 
     @field:SerializedName("name")
     val name: Name? = null,
+
+    @field:SerializedName("cca3")
+    val cca3: String? = null,
+
+    @field:SerializedName("region")
+    val region: String? = null,
+
+    @field:SerializedName("latlng")
+    val latlng: List<Any?>? = null,
+
+    @field:SerializedName("cca2")
+    val cca2: String? = null,
 
     @field:SerializedName("status")
     val status: String? = null,
 
     @field:SerializedName("currencies")
-    val currencies: Any? = null
+    val currencies: Currencies? = null
 )
 
 
